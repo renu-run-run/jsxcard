@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"> </div>
+    <script type="text/babel">
+        //jsx div Element
+
+        let div = <div style={{ width:"400px",height:"70vh",margin:"50px auto" , boxShadow:"0 0 10px black"}}>
+            <div style={{textAlign:"center", padding:"2rem 0 0 0"}}>
+              <img src="https://cdn1.iconfinder.com/data/icons/avatars-1-5/136/60-512.png" width={150} height={150} style={{borderRadius:"50%"}}/>
+              <h2>Renuka Choudhary</h2> 
+              <p>I enjoy drinking a cup of coffee everyday</p>   
+                
+            </div>
+            <div style={{display:"flex",justifyContent:"space-evenly"}}>
+              <div style={{textAlign:"center"}}>
+                <h2 style={{color:"blueviolet"}}>123</h2>
+                <p >Posts</p>
+              </div>  
+              <div  style={{textAlign:"center"}}>
+                <h2 style={{color:"blueviolet"}}>176</h2>
+                <p>Followers</p>
+              </div>  
+              <div  style={{textAlign:"center"}}>
+                <h2 style={{color:"blueviolet"}}>426</h2>
+                <p>Following</p>
+              </div> 
+            </div>
+        
+
+            <div style={{textAlign:"center", padding:"1rem"}}>
+               <button style={{padding:"1rem",backgroundColor:"blueviolet",borderRadius:"5px",border:"none",color:"white",fontSize:"15px"}}>FOLLOW</button> &nbsp;
+               <button style={{padding:"1rem",backgroundColor:"hotpink",borderRadius:"5px",border:"none",color:"white",fontSize:"15px"}}>MESSAGE</button>   
+            </div>
+            
+        </div>
+        ReactDOM.render(div, document.getElementById('root'));
+
+    </script>
+</body>
+
+</html>
